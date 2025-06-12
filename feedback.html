@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback - DigiLiteracy</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="accessibility-bar">
+      <div class="container">
+        <div class="accessibility-controls">
+          <button id="increaseFont" aria-label="Increase font size">
+            <i class="fas fa-text-height"></i> A+
+          </button>
+          <button id="decreaseFont" aria-label="Decrease font size">
+            <i class="fas fa-text-height"></i> A-
+          </button>
+
+          <button id="voiceCommand" aria-label="Voice command">
+            <i class="fas fa-microphone"></i> Voice
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <h1>DigiLiteracy</h1>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="chat.html">AI Chat</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Share Your Feedback</h1>
+        <p>Help us improve DigiLiteracy for everyone</p>
+      </div>
+    </section>
+
+    <section class="feedback-section">
+      <div class="container">
+        <div class="feedback-container">
+          <div class="feedback-intro">
+            <h2>Your Opinion Matters</h2>
+            <p>
+              We're constantly working to make DigiLiteracy better for parents
+              and elderly users. Your feedback helps us understand what's
+              working well and what needs improvement.
+            </p>
+          </div>
+
+          <form id="feedbackForm" class="feedback-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="feedbackType">Feedback Type</label>
+              <select id="feedbackType" name="feedbackType">
+                <option value="">Select feedback type</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="problem">Problem Report</option>
+                <option value="question">Question</option>
+                <option value="praise">Praise</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Brief subject of your feedback"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Feedback</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Please share your detailed feedback, suggestions, or questions..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">
+                Submit Feedback
+              </button>
+            </div>
+          </form>
+
+          <div
+            id="feedbackSuccess"
+            class="feedback-success"
+            style="display: none"
+          >
+            <div class="success-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Thank You for Your Feedback!</h3>
+            <p>
+              We appreciate you taking the time to share your thoughts with us.
+              Your feedback helps us improve DigiLiteracy for everyone.
+            </p>
+            <button class="btn btn-secondary" id="submitAnotherBtn">
+              Submit Another Feedback
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>DigiLiteracy</h2>
+            <p>Empowering Digital Literacy!</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 DigiLiteracy.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="accessibility.js"></script>
+    <script src="feedback.js"></script>
+  </body>
+</html>

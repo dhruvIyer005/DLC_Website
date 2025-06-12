@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorials - DigiLiteracy</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="accessibility-bar">
+      <div class="container">
+        <div class="accessibility-controls">
+          <button id="increaseFont" aria-label="Increase font size">
+            <i class="fas fa-text-height"></i> A+
+          </button>
+          <button id="decreaseFont" aria-label="Decrease font size">
+            <i class="fas fa-text-height"></i> A-
+          </button>
+
+          <button id="voiceCommand" aria-label="Voice command">
+            <i class="fas fa-microphone"></i> Voice
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <h1>DigiLiteracy</h1>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tutorials.html" class="active">Tutorials</a></li>
+            <li><a href="chat.html">AI Chat</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Step-by-Step Tutorials</h1>
+        <p>Learn essential digital skills with our easy-to-follow guides</p>
+      </div>
+    </section>
+
+    <section class="tutorial-categories">
+      <div class="container">
+        <div class="category-tabs">
+          <button class="category-tab active" data-category="all">
+            All Tutorials
+          </button>
+          <button class="category-tab" data-category="whatsapp">
+            WhatsApp
+          </button>
+          <button class="category-tab" data-category="paytm">Paytm</button>
+          <button class="category-tab" data-category="googlemaps">
+            Google Maps
+          </button>
+          <button class="category-tab" data-category="safety">
+            Digital Safety
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="tutorials">
+      <div class="container">
+        <div class="tutorials-grid">
+          <!-- WhatsApp Tutorials -->
+          <div class="tutorial-card" data-category="whatsapp" id="whatsapp">
+            <div class="tutorial-thumbnail">
+              <img
+                src="https://www.freeiconspng.com/uploads/whatsapp-icon-png-13.png"
+                alt="Sending photos on WhatsApp"
+              />
+              <div class="tutorial-category">WhatsApp</div>
+            </div>
+            <div class="tutorial-content">
+              <h3>How to Send Photos on WhatsApp</h3>
+              <p>
+                Learn to share photos with friends and family through WhatsApp
+              </p>
+              <div class="tutorial-meta">
+                <span><i class="fas fa-clock"></i> 3 min</span>
+                <span><i class="fas fa-level-up-alt"></i> Beginner</span>
+              </div>
+              <a
+                href="#"
+                class="btn btn-secondary tutorial-btn"
+                data-tutorial="whatsapp-photos"
+                >Start Tutorial</a
+              >
+            </div>
+          </div>
+
+          <div class="tutorial-card" data-category="whatsapp">
+            <div class="tutorial-thumbnail">
+              <img
+                src="https://www.freeiconspng.com/uploads/whatsapp-icon-png-13.png"
+                alt="Making video calls on WhatsApp"
+              />
+              <div class="tutorial-category">WhatsApp</div>
+            </div>
+            <div class="tutorial-content">
+              <h3>Making Video Calls on WhatsApp</h3>
+              <p>Connect face-to-face with loved ones through video calls</p>
+              <div class="tutorial-meta">
+                <span><i class="fas fa-clock"></i> 4 min</span>
+                <span><i class="fas fa-level-up-alt"></i> Beginner</span>
+              </div>
+              <a
+                href="#"
+                class="btn btn-secondary tutorial-btn"
+                data-tutorial="whatsapp-video"
+                >Start Tutorial</a
+              >
+            </div>
+          </div>
+
+          <div class="tutorial-card" data-category="whatsapp">
+            <div class="tutorial-thumbnail">
+              <img
+                src="https://www.freeiconspng.com/uploads/whatsapp-icon-png-13.png"
+                alt="Creating WhatsApp groups"
+              />
+              <div class="tutorial-category">WhatsApp</div>
+            </div>
+            <div class="tutorial-content">
+              <h3>Creating Groups on WhatsApp</h3>
+              <p>
+                Learn how to create and manage group chats for family or friends
+              </p>
+              <div class="tutorial-meta">
+                <span><i class="fas fa-clock"></i> 5 min</span>
+                <span><i class="fas fa-level-up-alt"></i> Intermediate</span>
+              </div>
+              <a
+                href="#"
+                class="btn btn-secondary tutorial-btn"
+                data-tutorial="whatsapp-groups"
+                >Start Tutorial</a
+              >
+            </div>
+          </div>
+
+          <!-- Paytm Tutorials -->
+          <div class="tutorial-card" data-category="paytm" id="paytm">
+            <div class="tutorial-thumbnail">
+              <img
+                src="https://images.icon-icons.com/730/PNG/512/paytm_icon-icons.com_62778.png"
+                alt="Sending money via Paytm"
+              />
+              <div class="tutorial-category">Paytm</div>
+            </div>
+            <div class="tutorial-content">
+              <h3>How to Send Money via Paytm</h3>
+              <p>Learn to transfer money safely to friends and family</p>
+              <div class="tutorial-meta">
+                <span><i class="fas fa-clock"></i> 4 min</span>
+                <span><i class="fas fa-level-up-alt"></i> Beginner</span>
+              </div>
+              <a
+                href="#"
+                class="btn btn-secondary tutorial-btn"
+                data-tutorial="paytm-send-money"
+                >Start Tutorial</a
+              >
+            </div>
+          </div>
+
+          <div class="tutorial-card" data-category="paytm">
+            <div class="tutorial-thumbnail">
+              <img
+                src="https://images.icon-icons.com/730/PNG/512/paytm_icon-icons.com_62778.png"
+                alt="Mobile recharge on Paytm"
+              />
+              <div class="tutorial-category">Paytm</div>
+            </div>
+            <div class="tutorial-content">
+              <h3>Mobile Recharge on Paytm</h3>
+              <p>Recharge your mobile phone quickly and easily</p>
+              <div class="tutorial-meta">
+                <span><i class="fas fa-clock"></i> 3 min</span>
+                <span><i class="fas fa-level-up-alt"></i> Beginner</span>
+              </div>
+              <a
+                href="#"
+                class="btn btn-secondary tutorial-btn"
+                data-tutorial="paytm-recharge"
+                >Start Tutorial</a
+              >
+            </div>
+          </div>
+
+          <div class="tutorial-card" data-category="paytm">
+            <div class="tutorial-thumbnail">
+              <img
+                src="https://images.icon-icons.com/730/PNG/512/paytm_icon-icons.com_62778.png"
+                alt="Paying bills on Paytm"
+              />
+              <div class="tutorial-category">Paytm</div>
+            </div>
+            <div class="tutorial-content">
+              <h3>Paying Utility Bills on Paytm</h3>
+              <p>Pay electricity, water, and other bills from home</p>
+              <div class="tutorial-meta">
+                <span><i class="fas fa-clock"></i> 5 min</span>
+                <span><i class="fas fa-level-up-alt"></i> Intermediate</span>
+              </div>
+              <a
+                href="#"
+                class="btn btn-secondary tutorial-btn"
+                data-tutorial="paytm-bills"
+                >Start Tutorial</a
+              >
+            </div>
+          </div>
+
+          <!-- Google Maps Tutorials -->
+          <div class="tutorial-card" data-category="googlemaps" id="googlemaps">
+            <div class="tutorial-thumbnail">
+              <img
+                src="https://www.iconpacks.net/icons/2/free-location-map-icon-2956-thumb.png"
+                alt="Getting directions on Google Maps"
+              />
+              <div class="tutorial-category">Google Maps</div>
+            </div>
+            <div class="tutorial-content">
+              <h3>Getting Directions on Google Maps</h3>
+              <p>Navigate to any destination with turn-by-turn directions</p>
+              <div class="tutorial-meta">
+                <span><i class="fas fa-clock"></i> 4 min</span>
+                <span><i class="fas fa-level-up-alt"></i> Beginner</span>
+              </div>
+              <a
+                href="#"
+                class="btn btn-secondary tutorial-btn"
+                data-tutorial="maps-directions"
+                >Start Tutorial</a
+              >
+            </div>
+          </div>
+
+          <div class="tutorial-card" data-category="googlemaps">
+            <div class="tutorial-thumbnail">
+              <img
+                src="https://www.iconpacks.net/icons/2/free-location-map-icon-2956-thumb.png"
+                alt="Finding nearby places on Google Maps"
+              />
+              <div class="tutorial-category">Google Maps</div>
+            </div>
+            <div class="tutorial-content">
+              <h3>Finding Nearby Places</h3>
+              <p>Discover restaurants, ATMs, and other places near you</p>
+              <div class="tutorial-meta">
+                <span><i class="fas fa-clock"></i> 3 min</span>
+                <span><i class="fas fa-level-up-alt"></i> Beginner</span>
+              </div>
+              <a
+                href="#"
+                class="btn btn-secondary tutorial-btn"
+                data-tutorial="maps-nearby"
+                >Start Tutorial</a
+              >
+            </div>
+          </div>
+
+          <!-- Digital Safety Tutorials -->
+          <div class="tutorial-card" data-category="safety" id="safety">
+            <div class="tutorial-thumbnail">
+              <img
+                src="https://news.miami.edu/dcie/_assets/images/images-stories/2016/06/digital-literacy-lg.png"
+                alt="Digital safety tips"
+              />
+              <div class="tutorial-category">Digital Safety</div>
+            </div>
+            <div class="tutorial-content">
+              <h3>Protecting Yourself from Online Scams</h3>
+              <p>Learn to identify and avoid common online scams</p>
+              <div class="tutorial-meta">
+                <span><i class="fas fa-clock"></i> 6 min</span>
+                <span><i class="fas fa-level-up-alt"></i> All Levels</span>
+              </div>
+              <a
+                href="#"
+                class="btn btn-secondary tutorial-btn"
+                data-tutorial="safety-scams"
+                >Start Tutorial</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tutorial Modal -->
+    <div class="tutorial-modal" id="tutorialModal">
+      <div class="tutorial-modal-content">
+        <div class="tutorial-modal-header">
+          <h2 id="tutorialTitle">Tutorial Title</h2>
+          <button class="tutorial-modal-close">&times;</button>
+        </div>
+        <div class="tutorial-modal-body" id="tutorialContent">
+          <!-- Tutorial content will be loaded here -->
+        </div>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>DigiLiteracy</h2>
+            <p>Empowering Digital Literacy!</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 DigiLiteracy.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="accessibility.js"></script>
+    <script src="tutorials.js"></script>
+  </body>
+</html>

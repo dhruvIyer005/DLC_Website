@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chat - DigiLiteracy</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="accessibility-bar">
+      <div class="container">
+        <div class="accessibility-controls">
+          <button id="increaseFont" aria-label="Increase font size">
+            <i class="fas fa-text-height"></i> A+
+          </button>
+          <button id="decreaseFont" aria-label="Decrease font size">
+            <i class="fas fa-text-height"></i> A-
+          </button>
+
+          <button id="voiceCommand" aria-label="Voice command">
+            <i class="fas fa-microphone"></i> Voice
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <h1>DigiLiteracy</h1>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="chat.html" class="active">AI Chat</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Chat with DigiBuddy</h1>
+        <p>Your AI assistant for learning digital tools</p>
+      </div>
+    </section>
+
+    <div class="main-content chat-page">
+      <div class="container">
+        <!-- Categories Sidebar -->
+        <aside class="sidebar">
+          <div class="categories-card">
+            <h3>📱 Categories</h3>
+            <div class="category-buttons">
+              <button class="category-btn" data-category="whatsapp">
+                💬 WhatsApp
+              </button>
+              <button class="category-btn" data-category="paytm">
+                💳 Paytm
+              </button>
+              <button class="category-btn" data-category="googlemaps">
+                🗺️ Google Maps
+              </button>
+              <button class="category-btn" data-category="general">
+                ❓ General Help
+              </button>
+            </div>
+          </div>
+
+          <div class="help-card">
+            <h3>💡 How to Ask</h3>
+            <div class="help-examples">
+              <ul>
+                <li>"How to send photo on WhatsApp?"</li>
+                <li>"How to send money via Paytm?"</li>
+                <li>"How to get directions?"</li>
+                <li>"How to make video call?"</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Chat Interface -->
+        <main class="chat-container">
+          <div class="chat-header">
+            <div class="chat-title"><i class="fas fa-robot"></i> DigiBuddy</div>
+          </div>
+
+          <div class="chat-messages" id="chatMessages">
+            <div class="welcome-message">
+              <div class="bot-message">
+                <div class="message-content">
+                  <p>Welcome to DigiLiteracy! 👋</p>
+                  <p>
+                    I'm DigiBuddy, your AI assistant for learning digital tools.
+                  </p>
+                  <p>I can help you with:</p>
+                  <ul>
+                    <li>📱 WhatsApp - messages, calls, photos, groups</li>
+                    <li>💳 Paytm - payments, recharges, bills</li>
+                    <li>🗺️ Google Maps - directions, finding places</li>
+                    <li>🔒 Digital safety tips</li>
+                  </ul>
+                  <p>What would you like to learn today?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-input-container">
+            <form id="chatForm" class="chat-form">
+              <input
+                type="text"
+                id="messageInput"
+                placeholder="Ask about WhatsApp, Paytm, Google Maps..."
+                autocomplete="off"
+              />
+              <button type="submit" id="sendButton">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            <div class="voice-input">
+              <button id="voiceInputBtn" aria-label="Voice input">
+                <i class="fas fa-microphone"></i>
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>DigiLiteracy</h2>
+            <p>Empowering Digital Literacy!</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 DigiLiteracy.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="accessibility.js"></script>
+  </body>
+</html>
